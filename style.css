@@ -220,22 +220,28 @@ section {
 }
 /* CONTACT SECTION */
 #contact {
-  padding: 80px 20px;
+  padding: 100px 20px;
   text-align: center;
-  background: linear-gradient(180deg, #0b1220, #0f1724);
+  background: linear-gradient(180deg, #0e1626, #0b1220); /* smoother transition */
   color: #e6eef8;
+  min-height: 100vh; /* makes section fill full screen */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact h2 {
   font-size: 2rem;
   color: var(--accent, #7dd3fc);
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .contact p {
   color: var(--muted, #94a3b8);
   font-size: 1.1rem;
   margin-bottom: 25px;
+  max-width: 600px;
 }
 
 .contact .btn {
@@ -253,4 +259,3 @@ section {
   transform: translateY(-4px);
   box-shadow: 0 6px 20px rgba(125,211,252,0.3);
 }
-
