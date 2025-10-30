@@ -219,22 +219,22 @@ section {
   font-weight: 600;
 }
 /* CONTACT SECTION */
+/* --- CONTACT SECTION (Compact Version) --- */
 #contact {
-  padding: 100px 20px;
+  padding: 60px 20px;
   text-align: center;
-  background: linear-gradient(180deg, #0e1626, #0b1220); /* smoother transition */
+  background: linear-gradient(180deg, #0b1220, #0f1724);
   color: #e6eef8;
-  min-height: 100vh; /* makes section fill full screen */
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .contact h2 {
   font-size: 2rem;
   color: var(--accent, #7dd3fc);
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .contact p {
