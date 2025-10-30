@@ -315,3 +315,21 @@ section {
     width: 100%;
   }
 }
+/* ----- MOBILE FIX: Prevent side overflow ----- */
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Make sure all sections and grids fit mobile screens */
+section, .hero, .about, .skills, .projects, .contact {
+  max-width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+/* Fix images or grids overflowing */
+img {
+  max-width: 100%;
+  height: auto;
+}
