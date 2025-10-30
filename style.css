@@ -253,3 +253,168 @@ section {
   transform: translateY(-4px);
   box-shadow: 0 6px 20px rgba(125,211,252,0.3);
 }
+/* -------------------------------------- */
+/* 🌐 GLOBAL RESPONSIVE SETTINGS */
+/* -------------------------------------- */
+@media (max-width: 1024px) {
+  body {
+    font-size: 15px;
+  }
+
+  section {
+    padding: 60px 30px;
+  }
+}
+
+/* -------------------------------------- */
+/* 📱 MOBILE VIEW (below 768px) */
+/* -------------------------------------- */
+@media (max-width: 768px) {
+  /* General Layout */
+  section {
+    padding: 40px 20px;
+  }
+
+  h1, h2, h3 {
+    text-align: center;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* ---------------------------- */
+  /* 🔹 NAVIGATION */
+  /* ---------------------------- */
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* ---------------------------- */
+  /* 🔹 HOME / HERO SECTION */
+  /* ---------------------------- */
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .hero img {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  /* ---------------------------- */
+  /* 🔹 ABOUT SECTION */
+  /* ---------------------------- */
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-content {
+    width: 100%;
+  }
+
+  .about-image {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  /* ---------------------------- */
+  /* 🔹 SKILLS SECTION */
+  /* ---------------------------- */
+  .skills-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-items: center;
+  }
+
+  .skill-card {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* ---------------------------- */
+  /* 🔹 PROJECTS SECTION */
+  /* ---------------------------- */
+  .projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* ---------------------------- */
+  /* 🔹 CONTACT SECTION */
+  /* ---------------------------- */
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .contact-form, .contact-info {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  input, textarea {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  /* ---------------------------- */
+  /* 🔹 FOOTER SECTION */
+  /* ---------------------------- */
+  footer {
+    text-align: center;
+    padding: 20px;
+  }
+}
+
+/* -------------------------------------- */
+/* 📱 SMALL DEVICES (below 480px) */
+/* -------------------------------------- */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+
+  nav ul {
+    gap: 8px;
+  }
+
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
+
+  .hero img {
+    width: 100%;
+  }
+}
