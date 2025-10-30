@@ -333,3 +333,47 @@ img {
   max-width: 100%;
   height: auto;
 }
+/* --- Mobile Fix for Hero Section --- */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;      /* Stack text and image */
+    align-items: center;         /* Center items horizontally */
+    text-align: center;          /* Center text */
+    padding: 60px 5%;            /* Reduce side padding */
+  }
+
+  .hero-left {
+    width: 100%;
+  }
+
+  .hero-right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+  }
+
+  .card {
+    width: 90%;
+    max-width: 320px;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Ensure no side overflow on any device */
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
